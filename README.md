@@ -1,2 +1,2 @@
 # BootCampActivities
-Activity Files
+ This Repo contains all my course Activity Files
