@@ -70,8 +70,8 @@ body {
   grid-template-areas:
   "bookcases bedroom patio"
   "couches couches patio"
-  "desks desks desks"
-  ;
+  "desks desks desks";
+  
 }
 
 #bookcases {
@@ -182,4 +182,14 @@ h4 {
   font-weight: 300;
   margin: 0px 0px;
   color: #636364;
+}
+@media only screen and (max-width: 1000px) {
+  // Your new CSS selectors go here
+  #navigation {
+    display: none;
+  }
+  #catagorygrid {
+    1`
+  }
+
 }

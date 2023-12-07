@@ -3,11 +3,45 @@ body {
 }
 
 /* Grid CSS */
-
+#heroGrid {
+  margin: 0px;
+  display: grid;
+  min-height: 500px;
+  height: 70vh;
+  grid-template-rows: 75% 25%; /*template dimensions*/
+  grid-template-columns: 75% 25%;
+  grid-template-areas: 
+  /*grid sections for contents*/
+  'featuredProduct secondaryProduct' /*1st row 2 columms*/
+  'featuredProduct CTA';             /*2nd row 2 colums*/
+ 
+}
 
 /* Category Grid CSS */
+#featuredProduct {
+  grid-area: featuredProduct; /*property assiciated to grid area*/
+  background-image: url(../images/furniture1\ 3.jpg)
+}
 
+#secondaryProduct {
+  grid-area: secondaryProduct; 
+  background-image: url(../images/furniture2.jpg)
+}
 
+#CTA {
+  grid-area: CTA;
+  background-image: url(../images/woodbg.png);
+  justify-content: 0px 5%;
+  cursor: pointer;
+}
+
+.heroGridArea {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: flex;
+  position: relative;
+}
 
 
 /* Navigation CSS */
@@ -66,6 +100,16 @@ h4 {
   font-size: 22px;
 }
 
+#headline {
+  border-bottom: 5px solid #FF6200; /*bottom border only */
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute; /*absolue positioning to move the headline box */
+  top: 125px;;
+  right:-45px;
+  z-index:100; /*moves the headline box to the top */
+  padding: 15px;
+  max-width: 550px;
+}
 
 #headline p {
   max-width: 350px;
@@ -73,4 +117,5 @@ h4 {
   font-weight: 300;
   margin: 0px 0px;
   color: #636364;
+
 }
