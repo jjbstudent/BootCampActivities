@@ -52,13 +52,68 @@ body {
   display: flex;
   position: relative;
 }
-
 /* Category Grid CSS */
+/*sub heading menu*/
+.subHeading {
+  text-align: center;
+  border-bottom: 2px solid black;
+  width: 300px;
+  margin: 50px auto;
+}
 
+#catagoryGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px; /*Row is 300px tall*/
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "bookcases bedroom patio"     /* row 1 occupies grid-area*/
+  "couches couches patio"     /* row 2 occupies grid-area*/
+  "desks desks desks";         /* row 3 occupies grid-area*/
+}
 
+#bookcases {
+  grid-area: bookcases;
+  background-image: url("../images/bookcases@2x.png");
+}
+#bedroom {
+  grid-area: bedroom;
+  background-image: url("../images/beds@2x.png");
+}
+#couches {
+  grid-area: couches;
+  background-image: url("../images/couch@2x.png");
+}
+#patio {
+  grid-area: patio;
+  background-image: url("../images/patio@2x.png");
+}
+#desks {
+  grid-area: desks;
+  background-image: url("../images/desks@2x.png");
+}
 
+#catagoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+/*selectors targeting the grid areas with images assigned*/
 
+.heading {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid #FF6200;
+}
 /* Navigation CSS */
+
 /* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
 #navBar {
   display: flex;
