@@ -1,9 +1,22 @@
+/* Define CSS Variables */
+:root {
+  /* Repeated color value for the main theme color */
+  --main-color: #106761;
+
+  /* Repeated border radius value for elements with rounded corners */
+  --border-radius-value: 8px;
+}
+
+/* Apply the CSS Variables to your original CSS code */
+
 body {
   font-size: 16px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   justify-content: flex-start;
+  /* Set the background color using the main color variable */
+  background-color: var(--main-color);
 }
 
 h1 {
@@ -19,17 +32,17 @@ h2 {
 header {
   padding: 40px;
   text-align: center;
-  background: #13293d;
+  background: var(--main-color); /* Use the main color variable for the background */
   color: #fff;
 }
 
 nav {
   display: flex;
-  background-color: #d8a47f;
+  background-color: #d3d3d3;
 }
 
 nav a {
-  color: #13293d;
+  color: var(--main-color); /* Use the main color variable for the text color */
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
@@ -49,7 +62,7 @@ footer {
   bottom: 0;
   padding: 20px;
   text-align: center;
-  background: #13293d;
+  background: var(--main-color); /* Use the main color variable for the background */
   color: #fff;
   margin-top: auto;
 }
@@ -66,7 +79,7 @@ footer {
 .card {
   border-style: solid;
   border-width: 1px;
-  border-radius: 50px;
+  border-radius: var(--border-radius-value); /* Use the border radius variable */
   padding: 10px;
   flex: 0 0 300px;
   transform: rotate(8deg);
@@ -75,7 +88,7 @@ footer {
 }
 
 .card > header {
-  border-radius: 50px 50px 0px 0px;
+  border-radius: var(--border-radius-value) var(--border-radius-value) 0 0; /* Use the border radius variable */
   padding: 20px;
 }
 
