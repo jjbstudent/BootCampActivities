@@ -1,3 +1,7 @@
+:root {
+  --turquoise-color: #00CED1; /* Adjust the color code as needed */
+}
+
 /* Reset some default styles */
 body,
 h1,
@@ -18,9 +22,10 @@ body {
 }
 
 .page-wrapper {
-    max-width: 950px;
-    margin: 0 0 0 auto; /* Setting right margin to auto */
-    padding: 20px;
+  max-width: 950px;
+  margin: 0 0 0 auto;
+  padding: 20px;
+  position: relative;
 }
 
 /* Header Styles */
@@ -33,28 +38,27 @@ header {
 h1 {
   font-size: 2.5em;
   text-align: left;
+ 
   background-color: turquoise;
   display: unset;
   text-size-adjust: 0px;
   
 }
-
-nav {
-  margin-top: 10px;
+/*header navigating styling*/
+header nav {
+  margin-top: 0%;
   text-align: right /* Align the navigation to the right */
 }
 
-nav a {
-  color: whitesmoke; /* Replace with your desired text color value */
-  text-decoration: none; /* Remove underlines from links */
+header nav a {
+  color: var(--turquoise-color);/* Replace with your desired text color value */
   padding: 10px 15px; /* Add some padding for better spacing */
   margin: 0 10px; /* Add margin to separate links */
   border-radius: 5px; /* Add rounded corners to the links */
   text-size-adjust: 50px;
-  
 }
 
-nav a:hover {
+header nav a:hover {
   background-color: blue; /* Replace with your desired background color value on hover */
   color: greenyellow; /* Replace with your desired text color value on hover */
 }
@@ -62,6 +66,7 @@ nav a:hover {
 /* Hero Banner Styles */
 .hero-banner {
   background-image: url("../images/02-hero-bg.jpg");
+  background-size: cover; /* fits image to match grid area*/
   color: #fff;
   text-align: right;
   padding: 50px 0;
@@ -71,13 +76,13 @@ nav a:hover {
   font-size: 1em;
   display: unset;
   margin:3%;
-  background-color:turquoise;
+  background-color: var(--turquoise-color);
   padding: 10px;
 }
 
 /* Page Section Styles */
 .page-section {
-  margin-bottom: 30px;
+  margin-bottom: 30px; /* Add margin between page sections */
 }
 /*---------------------------------------------grid section-------------------------------------------------*/
 /* Add this CSS for the grid layout */
@@ -90,61 +95,77 @@ nav a:hover {
 }
 
 .grid-item {
-  background-color: #fff; /* Adjust the background color as needed */
-  padding: 20px;
-  border: 4px solid turquoise /* Add a border for better visibility */
+  position: relative;
+  padding: 0px;
+  background-color: var(--turquoise-color);
 }
-/* Example CSS for adding a border around the content within the grid-item */
 
-.grid-contents-span {
-  display: flex;
-  position: relative;
-  bottom: 0%;
-  flex-direction: column;
-  background-color:turquoise;
-}
-.grid-contents {
-  display: flex;
-  position: relative;
-  bottom: 0%;
-  flex-direction: column;
+.grid-contents,
+.grid-contents-span
+{
+  display: inline-block;
   text-align: justify;
-  background-color:turquoise;
+  background-color:var(--turquoise-color);
+  border: 1px solid black;
   padding: 10px; /* Add padding for better spacing */
 }
-.profile-headings {
-  display: flex;
-  position: relative;
-  right: 200px;
-  border-right: black;
+.profile-heading {
+    display: block; /* Change to block to ensure one column */
+    position: relative;
+    left: -200px;
+    top: 0;
+    margin-right: 20px; /* Adjust the margin for spacing */
+  }
   
-}
 /* Style for merged rows */
 .Surf-report {
-  background-color: rgb(97, 153, 153);
+  background-color: grey;
   grid-row: span 2;
 }
 
 /* Additional styles for other projects if needed */
 .led-window {
   background-image: url("../images/02-portfolio-1.jpg");
+  background-size: cover; /* fits image to match grid area*/
   /* Styles for LED Window project */
 }
 
 .calculator {
   background-image: url("../images/02-portfolio-2.jpg");
+  background-size: cover; /* fits image to match grid area*/
   /* Styles for Calculator project */
 }
 
 .pastel-puzzles {
   background-image: url("../images/02-portfolio-3.jpg");
+  background-size: cover; /* fits image to match grid area*/
   /* Styles for Pastel Puzzles project */
 }
 
 .run-buddy {
   background-image: url("../images/02-portfolio-4.jpg");
+  background-size: cover; /* fits image to match grid area*/
   /* Styles for Run Buddy project */
 }
+/*Contact me section-------------------------!>*/
+.contact-me nav {
+  margin-top: 0%;
+  text-align: center /* Align the navigation to the right */
+}
+
+.contact-me a{
+  color:black; /* Link text color */
+  transition: color 0.3s ease; /* Smooth transition for color changes */
+  padding: 8px 12px;
+  border: 1px solid var(--turquoise-color);
+  border-radius: 5px;
+}
+
+.contact-me a:hover {
+  color: #480381; /* Hover color */
+  background-color: var(--turquoise-color) /* Hover background color */
+}
+
 
 /*---------------------------------------------grid section-------------------------------------------------*/
 /* Responsive Styles */
@@ -153,8 +174,13 @@ nav a:hover {
     font-size: 1.5em;
   }
 
-  nav a {
+ header nav a {
     display: block;
     margin: 10px 0;
   }
+  .profile-headings {
+    position: static; /* Reset position for smaller screens */
+    margin-bottom: 10px; /* Add margin for spacing */
+  }
 }
+
