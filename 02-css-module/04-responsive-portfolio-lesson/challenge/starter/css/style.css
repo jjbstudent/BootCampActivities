@@ -1,23 +1,143 @@
-* {
-  box-sizing: border-box;
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+nav,
+ul,
+li {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+/* Global Styles */
+body {
+  background-color: #f4f4f4;
 }
 
-p {
-  margin: 0;
+.page-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: left;
+}
+
+nav {
+  margin-top: 10px;
+  text-align: right /* Align the navigation to the right */
+}
+
+nav a {
+  color: whitesmoke; /* Replace with your desired text color value */
+  text-decoration: none; /* Remove underlines from links */
+  padding: 10px 15px; /* Add some padding for better spacing */
+  margin: 0 10px; /* Add margin to separate links */
+  border-radius: 5px; /* Add rounded corners to the links */
+  text-size-adjust: 50px;
+  
+}
+
+nav a:hover {
+  background-color: blue; /* Replace with your desired background color value on hover */
+  color: greenyellow; /* Replace with your desired text color value on hover */
+}
+
+/* Hero Banner Styles */
+.hero-banner {
+  background-image: url("../images/02-hero-bg.jpg");
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.hero-banner h2 {
+  font-size: 2.5em;
+  display: unset;
+  background-color:turquoise;
+  padding: 10px;
+}
+
+/* Page Section Styles */
+.page-section {
+  margin-bottom: 30px;
+}
+/*---------------------------------------------grid section-------------------------------------------------*/
+/* Add this CSS for the grid layout */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin-bottom: 50px;
+  gap: 10px;
+}
+
+.grid-item {
+
+  background-color: #fff; /* Adjust the background color as needed */
+  padding: 20px;
+  border: 2px solid #080808; /* Add a border for better visibility */
+}
+/* Example CSS for adding a border around the content within the grid-item */
+
+.grid-contents {
+
+  background-color:turquoise;
+  display: block;
+  padding: 10px; /* Add padding for better spacing */
+}
+
+/* Style for merged rows */
+.Surf-report {
+  background-color: rgb(97, 153, 153);
+  grid-row: span 2;
+}
+
+/* Additional styles for other projects if needed */
+.led-window {
+  background-image: url("../images/02-portfolio-1.jpg");
+  /* Styles for LED Window project */
+}
+
+.calculator {
+  background-image: url("../images/02-portfolio-2.jpg");
+  /* Styles for Calculator project */
+}
+
+.pastel-puzzles {
+  background-image: url("../images/02-portfolio-3.jpg");
+  /* Styles for Pastel Puzzles project */
+}
+
+.run-buddy {
+  background-image: url("../images/02-run-buddy.jpg");
+  /* Styles for Run Buddy project */
+}
+
+/*---------------------------------------------grid section-------------------------------------------------*/
+/* Responsive Styles */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
 }
