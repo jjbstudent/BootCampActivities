@@ -10,20 +10,17 @@ li {
   padding: 0;
 }
 
+/* Global Styles */
 body {
+  background-color: #f4f4f4;
   font-family: 'Arial', sans-serif;
   line-height: 1.5;
 }
 
-/* Global Styles */
-body {
-  background-color: #f4f4f4;
-}
-
 .page-wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+    max-width: 950px;
+    margin: 0 0 0 auto; /* Setting right margin to auto */
+    padding: 20px;
 }
 
 /* Header Styles */
@@ -34,8 +31,12 @@ header {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   text-align: left;
+  background-color: turquoise;
+  display: unset;
+  text-size-adjust: 0px;
+  
 }
 
 nav {
@@ -62,13 +63,14 @@ nav a:hover {
 .hero-banner {
   background-image: url("../images/02-hero-bg.jpg");
   color: #fff;
-  text-align: center;
+  text-align: right;
   padding: 50px 0;
 }
 
 .hero-banner h2 {
-  font-size: 2.5em;
+  font-size: 1em;
   display: unset;
+  margin:3%;
   background-color:turquoise;
   padding: 10px;
 }
@@ -88,20 +90,35 @@ nav a:hover {
 }
 
 .grid-item {
-
   background-color: #fff; /* Adjust the background color as needed */
   padding: 20px;
-  border: 2px solid #080808; /* Add a border for better visibility */
+  border: 4px solid turquoise /* Add a border for better visibility */
 }
 /* Example CSS for adding a border around the content within the grid-item */
 
-.grid-contents {
-
+.grid-contents-span {
+  display: flex;
+  position: relative;
+  bottom: 0%;
+  flex-direction: column;
   background-color:turquoise;
-  display: block;
+}
+.grid-contents {
+  display: flex;
+  position: relative;
+  bottom: 0%;
+  flex-direction: column;
+  text-align: justify;
+  background-color:turquoise;
   padding: 10px; /* Add padding for better spacing */
 }
-
+.profile-headings {
+  display: flex;
+  position: relative;
+  right: 200px;
+  border-right: black;
+  
+}
 /* Style for merged rows */
 .Surf-report {
   background-color: rgb(97, 153, 153);
@@ -125,7 +142,7 @@ nav a:hover {
 }
 
 .run-buddy {
-  background-image: url("../images/02-run-buddy.jpg");
+  background-image: url("../images/02-portfolio-4.jpg");
   /* Styles for Run Buddy project */
 }
 
