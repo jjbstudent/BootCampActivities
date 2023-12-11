@@ -22,9 +22,9 @@ body {
 }
 
 .page-wrapper {
-  max-width: 950px;
-  margin: 0 0 0 auto;
-  padding: 20px;
+  max-width: 95%;
+  margin: 0 0 0 200px;
+  padding: 40px;
   position: relative;
 }
 
@@ -38,7 +38,6 @@ header {
 h1 {
   font-size: 2.5em;
   text-align: left;
- 
   background-color: turquoise;
   display: unset;
   text-size-adjust: 0px;
@@ -46,21 +45,21 @@ h1 {
 }
 /*header navigating styling*/
 header nav {
-  margin-top: 0%;
-  text-align: right /* Align the navigation to the right */
+    margin-top: 0%;
+    text-align: right;
 }
 
 header nav a {
   color: var(--turquoise-color);/* Replace with your desired text color value */
   padding: 10px 15px; /* Add some padding for better spacing */
-  margin: 0 10px; /* Add margin to separate links */
+  margin: 0 5px; /* Add margin to separate links */
   border-radius: 5px; /* Add rounded corners to the links */
-  text-size-adjust: 50px;
+  font-size: 20px;
 }
 
 header nav a:hover {
   background-color: blue; /* Replace with your desired background color value on hover */
-  color: greenyellow; /* Replace with your desired text color value on hover */
+  color: rgb(255, 47, 245); /* Replace with your desired text color value on hover */
 }
 
 /* Hero Banner Styles */
@@ -84,6 +83,7 @@ header nav a:hover {
 .page-section {
   margin-bottom: 30px; /* Add margin between page sections */
 }
+
 /*---------------------------------------------grid section-------------------------------------------------*/
 /* Add this CSS for the grid layout */
 .work-grid {
@@ -174,9 +174,9 @@ header nav a:hover {
     font-size: 1.5em;
   }
 
- header nav a {
-    display: block;
-    margin: 10px 0;
+  header nav {
+    flex-direction: column;
+    align-items: center;
   }
   .profile-headings {
     position: static; /* Reset position for smaller screens */
