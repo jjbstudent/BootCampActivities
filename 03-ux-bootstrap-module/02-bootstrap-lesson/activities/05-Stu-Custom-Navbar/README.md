@@ -32,7 +32,7 @@ In this activity, you’ll customize your site’s navbar to better reflect the 
 - Add a `<li>` tag after the dropdown `<li>`.
 - Give it the same class name as the other `<li>` elements in the navbar.
 - Add a `<a>` tag with the following properties:
-  - `btn btn-primary btn-lg navCTA classes`
+  - `btn btn-primary btn-lg navCTA`
   - `href="#"`
   - `role="button"`
   - `Buy Tickets` text

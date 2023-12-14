@@ -7,7 +7,8 @@
 
     <!-- Add Bootstrap CSS Here on line 10-->
     <!-- This is REQUIRED for bootstrap to work correctly -->
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
     <!-- This stylesheet is an example of how you can add your own stylesheet to customize bootstrap components. Notice how it is loaded 2nd to the required bootstrap stylesheet. This is so our stylesheet will overwrite bootstrap classes when we apply the same class but different styles to the stylsheet -->
     <link rel="stylesheet" href="css/index.css">
 
@@ -15,9 +16,29 @@
   </head>
   <body>
     <!-- Paste Navigation Code Below -->
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
 
     <!-- Paste Jumbotron Code Below-->
-
+    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+        <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+        <button class="btn btn-primary btn-lg" type="button">Example button</button>
+      </div>
+    </div>
     <!-- Add columns, rows, and cards Below -->
 
     <!-- Add form group below -->
