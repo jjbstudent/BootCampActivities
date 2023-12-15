@@ -64,6 +64,7 @@ header{
   flex-shrink: 0;
 }
 
+
 body {
   font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
 }
@@ -72,7 +73,16 @@ body {
   background: #FDC949;
 }
 .testimonials{
+  width: 1922px;
+  height: 908px;
+  flex-shrink: 0;
   background: #F8F9FA;
+}
+.testimonials-item1{
+width: 1922px;
+height: 908px;
+flex-shrink: 0;
+background: #F8F9FA;
 }
 
 .signup-section{
