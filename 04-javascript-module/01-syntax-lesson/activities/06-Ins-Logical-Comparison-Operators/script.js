@@ -35,11 +35,11 @@ var expression2 = (a > b);
 
 // Evaluates to true if expression1 AND expression2 are both true, otherwise false
 
-console.log(expression1 && expression2);
+console.log(expression1 || expression2);
 
 // Evaluates to true if expression1 OR expression2 is true, otherwise false
 
-console.log(expression1 || expression2);
+console.log(expression1 && expression2);
 
 // Logical Not (!) turns an expression that evaluates to true to false and vice versa
 // Returns true
