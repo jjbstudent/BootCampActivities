@@ -83,7 +83,38 @@ footer {
 }
 .cardContainer {
   margin-top: 20px;
+  text-align: center;
 }
 .card {
   margin: 0 auto;
+}
+
+.content{
+  padding: 50px;
+}
+
+.sectionheading{
+  text-align: center;
+}
+.showsNear{
+  padding: 0px 30px 30px 30px;
+}
+.valueprop{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.sideAccent{
+  background-color: #007bff;
+  width: 15px;
+}
+
+.imageContainer{
+  padding: 50px;
+}
+.imageContainer img{
+  width: 100%;
+}
+
+.footer{
+  background-image: url(../images/background1.png);
 }

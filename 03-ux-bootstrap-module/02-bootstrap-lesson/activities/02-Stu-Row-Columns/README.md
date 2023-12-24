@@ -2,13 +2,13 @@
 
 Your page has a `navbar` and `jumbotron`, so it’s time to add a structure for its content.
 
-Understanding how to structure a layout using containers, rows, and columns is necessary to create effective layouts with Bootstrap, as they are the default way to add structure to your site using Bootstrap 4.
+Understanding how to structure a layout using containers, rows, and columns is necessary to create effective layouts with Bootstrap, as they are the default way to add structure to your site using Bootstrap 5.
 
 ## Bootstrap Grid Reference
 
   ![Grid Reference](./images/grid-reference.png)
 
-Here is a quick reference for each Bootstrap 4 class used to build containers and rows:
+Here is a quick reference for each Bootstrap 5 class used to build containers and rows:
 
 - `Container`: Containers provide a means to center and horizontally pad your site’s contents.
 
@@ -18,7 +18,7 @@ Here is a quick reference for each Bootstrap 4 class used to build containers an
 
 - `Column`: Columns are nested within rows and determine the width of your content within a row (Bootstrap rows can be divided into 12 columns). 
 
-- Read more about column widths and screen sizes [here](https://getbootstrap.com/docs/4.3/layout/grid/#grid-options).
+- Read more about column widths and screen sizes [here](https://getbootstrap.com/docs/5.3/components/card/).
 
 ## Instructions
 
