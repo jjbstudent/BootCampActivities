@@ -12,6 +12,10 @@ var li1 = document.createElement("li");
 var li2 = document.createElement("li");
 var li3 = document.createElement("li");
 var li4 = document.createElement("li");
+li1.textContent = "Chinese";
+li2.textContent = "Pizza";
+li3.textContent = "Chicken";
+li4.textContent = "Seafood";
 
 h1El.textContent = "Welcome to my page";
 kittenEl.textContent = "This is my kitten 🐱.";
@@ -27,6 +31,7 @@ body.appendChild(favoriteEl);
 favoriteEl.appendChild(listEl);
 // Append ordered list 
 favoriteEl.appendChild(listEl);
+listEl.append(li1,li2,li3,li4);
 
 h1El.setAttribute("style", "margin:auto; width:50%; text-align:center;");
 infoEl.setAttribute("style", "margin:auto; width:50%; text-align:center;");
@@ -34,5 +39,19 @@ imgEl.setAttribute("src", "http://placekitten.com/200/300");
 nameEl.setAttribute("style", "font-size:25px; text-align:center;");
 kittenEl.setAttribute("style", "font-size:25px; text-align:center;");
 favoriteEl.setAttribute("style", "font-size:20px;");
+listEl.setAttribute("style", "background-color: #333333; padding: 20px;");
+li1.setAttribute("style", "color: white; padding: 5px; margin-left: 35px; background-color: grey");
+li2.setAttribute("style", "color: white; padding: 5px; margin-left: 35px; background-color: green");
+li3.setAttribute("style", "color: white; padding: 5px; margin-left: 35px; background-color: purple");
+li4.setAttribute("style", "color: white; padding: 5px; margin-left: 35px; background-color: blue");
 
 // TODO: Add ordered list items containing four favorite foods
+
+// Set text content for each list item
+
+// Set styles for the ordered list
+
+// Set styles for each list item with different background colors
+
+
+

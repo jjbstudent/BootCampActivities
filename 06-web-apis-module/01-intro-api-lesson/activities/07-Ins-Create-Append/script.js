@@ -26,3 +26,6 @@ if (nextTag === true) {
     document.body.appendChild(secondTag);
   }
 }
+// 1. create the element
+// 2. add content and style
+// 3. add/append th new tag to the page
