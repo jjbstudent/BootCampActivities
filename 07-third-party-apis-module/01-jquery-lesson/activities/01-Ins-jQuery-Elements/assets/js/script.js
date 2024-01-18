@@ -54,10 +54,7 @@ for (var i = 0; i < abilities.length; i++) {
 // select all `<div>` elements on the page
 // document.querySelectorAll('div');
 console.log($('div'));
-console.log(document.querySelectorAll("div"))
 
-var allLis = $("li");
-console.log()
 // Alternatively use the `$.each` method
 // $.each(abilities, function(i, ability) {
 //    abilityEl.append("<div>" + ability + "</div>");
