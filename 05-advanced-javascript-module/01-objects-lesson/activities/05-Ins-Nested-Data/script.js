@@ -2,10 +2,6 @@
 
 var cars = [ [ 'Subaru', 'Toyota', 'Buick' ], [ 'Crosstrek', 'Prius', 'Encore' ], [ 2015, 2020, 2012 ] ];
 
-console.log(cars);
-console.log(cars[1][1]);
-
-
 // Object of Objects
 
 var account = {
@@ -53,6 +49,7 @@ var account = {
 */
 
 // Array of Objects
+
 var planets = [
     {
         name: 'Earth',
@@ -71,14 +68,10 @@ var planets = [
         moons: 82
     }
 ];
-//displays arrey position 2/moons =79
-console.log(planets[2].moons);
 
 // Object of Arrays
+
 var website = {
     users: [ 'John', 'Mary', 'Tom' ],
     pages: [ 'Home', 'About', 'Contact' ]
 };
-
-//displays John 1st position in array website.users
-console.log(website.users[0])

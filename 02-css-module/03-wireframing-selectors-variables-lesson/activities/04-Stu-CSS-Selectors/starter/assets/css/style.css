@@ -70,14 +70,6 @@ footer {
 
 /* TODO: Add code here to select all <a> elements that link to a file with a `.css` extension */
 
-/* Add this style to your existing CSS file */
-
-/* Selects all <a> elements with an href attribute that ends with ".css" */
-a[href$=".css"]:before {
-  /* Inserts content (📝) before the actual text of the link */
-  content: "📝 ";
-}
-
 @media screen and (max-width: 768px) {
   header {
     flex-direction: column;

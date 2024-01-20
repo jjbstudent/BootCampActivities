@@ -1,6 +1,6 @@
 # Custom Webpage
 
-In this activity, you will customize the default Bootstrap 4 cards, content, and footer components to better reflect your site’s content.
+In this activity, you will customize the default Bootstrap 5 cards, content, and footer components to better reflect your site’s content.
 
 ## Instructions
 
@@ -72,7 +72,7 @@ In this activity, you will customize your site’s footer with a call to action 
 
 1. Add the `emailContain` class to the `<footer>` tag.
 
-2. Next, add an `<h3>` tag within the `<form>` tag but above the `form-group <div>`.
+2. Next, add an `<h3>` tag within the `<form>` tag but above the `mb-3 <div>`.
 
 3. Type `Join Our Mailing List` within the `<h3>` tag.
 
@@ -86,7 +86,7 @@ In this activity, you will customize your site’s footer with a call to action 
 
 - You have completed your Bootstrap template. 
 
-- That’s it for our template; you now have a fully responsive Bootstrap 4 template ready for you to customize and use professionally.
+- That’s it for our template; you now have a fully responsive Bootstrap 5 template ready for you to customize and use professionally.
 
 - Feel free to modify it further if you’d like. You could create a different style or, alternatively, add more content to your Bootstrap template (this could be more sections, redoing of some sections, etc.).
 

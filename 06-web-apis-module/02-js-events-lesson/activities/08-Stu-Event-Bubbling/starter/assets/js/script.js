@@ -1,22 +1,21 @@
 // TODO: Which element is the following line of code selecting?
-var carousel = document.querySelector(".carouselbox"); //carousel: is selecting the HTML element with the class "carouselbox."
-
+var carousel = document.querySelector(".carouselbox");
 // TODO: Which element is the following line of code selecting?
-var next = carousel.querySelector(".next"); //button class next
-var prev = carousel.querySelector(".prev"); //button class prev
-var index = 0; //
-var currentImage; 
+var next = carousel.querySelector(".next");
+var prev = carousel.querySelector(".prev");
+var index = 0;
+var currentImage;
 
-var images = [ //Initializes variables for the current index, current image URL, and an array of image URLs.
+var images = [
   "https://picsum.photos/300/200",
   "https://picsum.photos/300/201",
   "https://picsum.photos/300/202",
   "https://picsum.photos/300/203"
 ];
 
-carousel.style.backgroundImage = "url('https://picsum.photos/300/200')"; //Sets the background image of the carousel element to the first image in the array.
+carousel.style.backgroundImage = "url('https://picsum.photos/300/200')";
 
-function navigate(direction) { //Updates the index based on the given direction and sets the background image accordingly.
+function navigate(direction) {
   index = index + direction;
   if (index < 0) { 
     index = images.length - 1; 
@@ -28,22 +27,22 @@ function navigate(direction) { //Updates the index based on the given direction 
 }
 
 // TODO: Describe the functionality of the following event listener.
-carousel.addEventListener("click", function() { //Redirects to the URL of the current image when the carousel is clicked.
-  window.location.href = images[index]; 
+carousel.addEventListener("click", function() {
+  window.location.href = images[index];
 });
 
 // TODO: Describe the functionality of the following event listener.
-next.addEventListener("click", function(event) { 
+next.addEventListener("click", function(event) {
   // TODO: What is the purpose of the following line of code?
-  event.stopPropagation();  //Prevents the click event from propagating up the DOM tree and navigates to the next image.
+  event.stopPropagation();
 
-  navigate(1); //Initializes the carousel with the first image.
+  navigate(1);
 });
 
 // TODO: Describe the functionality of the following event listener.
 prev.addEventListener("click", function(event) {
     // TODO: What would happen if we didn't add the following line of code?
-  event.stopPropagation(); //The event.stopPropagation() calls prevent the click event from affecting other elements.
+  event.stopPropagation();
 
   navigate(-1);
 });

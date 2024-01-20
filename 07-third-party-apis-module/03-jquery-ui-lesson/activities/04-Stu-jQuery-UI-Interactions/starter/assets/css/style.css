@@ -17,8 +17,3 @@ h6 {
   font-weight: 200;
   font-style: italic;
 }
-#skills-list {
-  #skills-list { list-style-type: none; margin: 0; padding: 0; width: 60%; }
-  #skills-list li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
-  #skills-list li span { position: absolute; margin-left: -1.3em; }
-}

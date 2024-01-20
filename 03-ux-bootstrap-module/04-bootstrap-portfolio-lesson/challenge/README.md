@@ -94,7 +94,7 @@ In this assignment, you'll be building your portfolio layout using the Bootstrap
 
 ## Helpful Resources
 
-- [Bootstrap Documentation](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+- [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
 - [Responsive Web Design - How to Create Media Queries](https://www.youtube.com/watch?v=5xzaGSYd7jM)
 

@@ -46,52 +46,54 @@ It’s time to build the structure of your webpage.
 
 - Below, you will find some tips on how you could build this layout. These rules, however, are not set in stone, and there are multiple ways to build the website.
 
-1.  Start with a jumbotron that contains the following HTML tags: https://getbootstrap.com/docs/4.3/components/jumbotron/.
-- A `header` component that you will customize later.
+- Once you have structured your HTML, consider what other elements and classes you may need to leverage the structure of Bootstrap's components to achieve the final design provided in the brief.
+
+1. Start with a navbar that contains the following HTML tags:
+
 - Add a `nav` tag with the id `mainNav`.
   - Add a `div` tag with the class `container`.
     - Add a `link` tag with the text: travel california. 
   - Add a `div` tag.
     - Inside the `div` create an `unordered list` tag.
     - Add three `list items` for each link.
-- Add a `header` tag with the class `masthead`.
-  - Add a `div` tag with the class `container`.
-    - Add a `div` tag with the class `row`.
-      - Add a `div` tag with class `col-lg-7`.
-        - An `h1` tag to hold “Download the Travel California app and explore California today!”
-      - Add a `div` tag with class `col-lg-5`.
-        - Add a `div` tag with the class `device-container`.
-          - Add a `div` tag with the class `device`.
-          - Add a `div` tag with the class `screen`.
-          - Inside the div, add an `image` tag.
-          - Give your image the path `src="img/demo-screen-1.png"`.
 
-2. A `section` tag with the class `download` and id of `download` that contains the following HTML tags:
+2. A `header` tag with the class `masthead` that contains the following HTML tags:
+
+- Add a `div` tag with the class `container`.
+  - Add a `div` tag with the class `row`.
+    - Add a `div` tag with class `col-lg-7`.
+      - Add an `h1` tag to hold “Download the Travel California app and explore California today!”
+    - Add a `div` tag with class `col-lg-5`.
+      - Add a `div` tag with the class `device-container`.
+        - Inside the div, add an `img` tag.
+        - Give your image the path `src="img/demo-screen-1.png"`.
+
+3. A `section` tag with the class `download` and id of `download` that contains the following HTML tags:
 
 - Add a `div` tag with the class `container`.
   - Add a `div` tag with the class `row`.
     - Add a `div` tag with the class `col-md-8`.
-      - An `h2` with the class `section-heading` to contain our text “Discover what all the buzz is about!”
+      - Add an `h2` with the class `section-heading` to contain our text “Discover what all the buzz is about!”
       - A `p` to containt our text "Our app is available on any mobile device! Download now to get started!"
     - Add a `div` tag with the class `badges`.
       - Add a `link` tag with the class `badges-link`.
-        - Add an `image` tag with the `src="img/google-play-badge.svg"`.
-        - Add an `image` tag with the `src="img/app-store-badge.svg"`.
+        - Add an `img` tag with the `src="img/google-play-badge.svg"`.
+        - Add an `img` tag with the `src="img/app-store-badge.svg"`.
 
-3. A `section` tag with the class `testimonials` that contains the following tags:
+4. A `section` tag with the class `testimonials` that contains the following tags:
 
 - Add a `div` tag with the class `container`.
-  - An `h2` to contain our text “What people are saying...”
+  - Add an `h2` to contain our text “What people are saying...”
   - Add a `div` tag with the class `row`.
     - Create cards for each testimonial.
     - Add a `div` tag with the class `col-lg-4`.
       - Add a `div` tag with the class `testimonial-item`.
-        - Add an `image` tag.
+        - Add an `img` tag.
         - Add an `h5` with the name of the testimonal user.
         - Add a `p` tag with text.
     - Repeat this process for the next two cards.
 
-4. A `section` tag with the class `signup-section` and id `signup` that contains the following tags:
+5. A `section` tag with the class `signup-section` and id `signup` that contains the following tags:
 
 - Add a `div` tag with the class `container`.
   - Add a `div` tag with the class `row`.
@@ -102,7 +104,7 @@ It’s time to build the structure of your webpage.
         - Add an `input` tag inside the form tag.
         - Add a `button` tag with the text "Subscribe."
 
-5. A `section` tag with the class `contact-section` and `bg-black` that contains the following tags:
+6. A `section` tag with the class `contact-section` and `bg-black` that contains the following tags:
 
 - Add a `div` tag with the class `container`.
   - Create a row to house the three cards in the design.
@@ -118,7 +120,7 @@ It’s time to build the structure of your webpage.
     - Add three `link` tags.
     - Add an `i` tag inside each link and add a font-awesome class to add an icon.
 
-6. A `div` with the class of `footer` that contains another div holding a `p` tag that says "Copyright" [Insert Your Name 2021].
+7. A `div` with the class of `footer` that contains another div holding a `p` tag that says "Copyright" [Insert Your Name 2021].
 
 ### Part 2: Build the CSS (Style the Webpage)
 

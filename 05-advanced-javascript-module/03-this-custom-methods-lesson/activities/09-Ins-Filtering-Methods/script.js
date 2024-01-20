@@ -19,27 +19,24 @@ var planets = [
   }
 ];
 
-// Find & Filtering Methods
+// Filtering Methods
 
-// Find all numbers in array greater then 10 
+// Find
 console.log(numbers.find(function(i) {
   return i > 10
 }))
 
-// Find 1st planet with more then 10 moons
 console.log(planets.find(function(i) {
   return i.moons > 10
 }))
 
-// Filter all numbers 10 and over 
+// Filter
 console.log(numbers.filter(function(i) {
   return i >= 10
 }))
 
-// filter all planets with over ten moons  
 console.log(planets.filter(function(i) {
   return i.moons > 10
 }))
-
 
 

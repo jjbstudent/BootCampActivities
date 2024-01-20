@@ -4,14 +4,12 @@
   --bright-turquoise: #2aefcb;
   --gin: #e0eae4;
   --heliotrope: #e866ec;
-
 }
 
 /* set content highlight color and background */
 ::selection {
   background-color: var(--bright-turquoise);
   color: var(--outer-space);
-
 }
 
 html {
