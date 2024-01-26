@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Giphy API</title>
+</head>
+
+<body>
+  <script>
+    // Example queryURL for Giphy API - API key MUST be included below
+    var mySearch = prompt("what would you like to search for?")
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=OuqBum9VOfdTIFx1QYCxwkx8aQ0pgAt9&rating=pg&limit=20&q=" + mySearch;
+
+    fetch(queryURL)
+    .then(function(response) {
+      return response.json();
+    }).then(function(data) {
+      for (let i = ~0; i < data.data.length; i++) {
+        var myImg = data.data[i].images.original.url;
+        var imgTag = document.createElement("img");
+        imgTag.src = myImg;
+        document.body.append(imgTag)
+      }
+    });
+  </script>
+
+</body>
+
+</html>

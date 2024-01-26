@@ -1,5 +1,5 @@
- // This .on("click") function will trigger the Fetch Call
- $("#find-movie").on("click", function(event) {
+// This .on("click") function will trigger the Fetch Call
+$("#find-movie").on("click", function (event) {
 
   // Preventing the submit button from trying to submit the form
   // We're optionally using a form so the user may hit Enter to search instead of clicking the button
@@ -19,6 +19,14 @@
   // =================================================================
 
   // CODE GOES HERE
+  fetch(queryURL)
+    .then(res => {
+      return res.json()
+    })
+    .then(data => {
+      console.log(data)
+      $("#movie-view").text(JSON.stringify(data))
+    })
 
   // =================================================================
 });
