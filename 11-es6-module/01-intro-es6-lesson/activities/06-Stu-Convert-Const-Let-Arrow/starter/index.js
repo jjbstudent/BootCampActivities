@@ -62,3 +62,8 @@ const playRound = () =>{
 };
 
 playRound();
+ 
+
+// a call back function is when you provide a function as a value for a perameter
+// everything in javascript is an object
+// method is a prebuilt function that can bne used in javascript

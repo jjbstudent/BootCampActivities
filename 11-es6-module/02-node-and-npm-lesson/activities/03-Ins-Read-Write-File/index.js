@@ -7,8 +7,11 @@ fs.readFile('data.csv', 'utf8', (error, data) =>
   error ? console.error(error) : console.log(data)
 );
 
+
 // Uncomment this next function to write to the file with anything you pass in as process.argv[2]
 
-// fs.writeFile('log.txt', process.argv[2], (err) =>
-//   err ? console.error(err) : console.log('Success!')
-// );
+fs.writeFile('log.txt', process.argv[2], (err) =>
+  err ? console.error(err) : console.log('Success!')
+);
+
+// method overwrites the contents of the log.txt file
