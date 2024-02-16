@@ -23,3 +23,10 @@ inquirer
       ? console.log('Success!')
       : console.log('You forgot your password already?!')
   );
+inquirer.prompt([
+  {
+    type: 'input',
+    name: 'pikachu',
+    message: 
+  }
+])
