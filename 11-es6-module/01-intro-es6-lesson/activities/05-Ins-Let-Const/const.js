@@ -1,14 +1,8 @@
 // 1. const can be used for values which we will not reassign
 
-var age = 25;
+const age = 25;
 
 age++; // TypeError: Assignment to constant variable.
-
-
-for () {
-    
-
-} // sceleton of the for loop
 
 // ==========================================================================
 

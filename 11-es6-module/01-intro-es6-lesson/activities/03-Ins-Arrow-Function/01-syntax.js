@@ -19,11 +19,3 @@ var greeting = createGreeting("Hello", "Angie");
 
 // Logs "Hello, Angie!";
 greet(greeting);
-
-// logs pikachu function
-var pikachu =() => {
-  console.log('this is the arrow');
-  var something = 5;
-  console.log(something)
-}
-pikachu();
