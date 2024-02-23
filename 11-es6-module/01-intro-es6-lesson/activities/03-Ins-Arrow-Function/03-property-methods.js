@@ -15,5 +15,3 @@ dog.readTag();
 // In the makeSound and readTag methods, `this` doesn't refer to `dog`
 // If this code was run in Node.js, `this` refers to the global object in this file, which contains all the top level variables/functions.
 // If this code was run in the browser, `this` would refer to the window
-
-

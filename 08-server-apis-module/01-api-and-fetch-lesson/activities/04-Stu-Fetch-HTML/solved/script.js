@@ -19,7 +19,7 @@ fetch(queryURL)
     tRow.append(titleTd, yearTd, actorsTd);
     // Append the table row to the table body
     $("tbody").append(tRow);
-
+  });
 
 
 movie = "The Little Mermaid";

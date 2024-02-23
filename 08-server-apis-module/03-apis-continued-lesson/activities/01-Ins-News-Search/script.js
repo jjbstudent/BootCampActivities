@@ -142,7 +142,6 @@ $("#run-search").on("click", function (event) {
       return response.json();
     })
     .then(updatePage);
-    
 });
 
 //  .on("click") function associated with the clear button
